@@ -6,9 +6,11 @@ from fastapi import Depends
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+from settings import settings
+
 load_dotenv()
 
-DATABASE_URL=f"postgresql://{os.getenv("DB_USER")}:{os.getenv("DB_PASSWORD")}@{os.getenv("DB_HOST")}:{os.getenv("DB_PORT")}/fastapi_jwt_db"
+DATABASE_URL=settings.DATABASE_URL
 
 engine = create_engine(DATABASE_URL)
 

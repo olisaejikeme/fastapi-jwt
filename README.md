@@ -1,4 +1,4 @@
-## JWT Authentication API – FastAPI
+# JWT Authentication API – FastAPI
 This project is a simple authentication API built with FastAPI, implementing JWT-based authentication for secure user login and access to protected routes.
 
 Features
